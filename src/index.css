@@ -1,0 +1,74 @@
+body {
+  background: #f48fb1;
+}
+
+h1 {
+  font-family: "Lobster", cursive !important;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p {
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Lobster", cursive !important;
+}
+
+span {
+  color: black;
+  font-size: 20px !important;
+  margin: 10px 20px;
+}
+
+.add {
+  margin-top: 50px;
+}
+
+.material-icons {
+  margin-left: 10px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.completed {
+  opacity: 0.5;
+}
+
+.filter {
+  margin: 0 10px;
+  font-family: "Roboto", sans-serif !important;
+}
+
+.pink-font {
+  color: #f48fb1 !important;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  font-family: "Lobster", cursive !important;
+}
+
+.pink-font::placeholder {
+  color: #f48fb1 !important;
+  opacity: 0.5;
+}
+.main-font {
+  font-family: "Lobster", cursive !important;
+  color: white;
+}
+
+.input-style {
+  outline: none !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 15px 0 !important;
+  background-color: white !important;
+}
+
+.input-field input[type="text"]:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+span {
+  cursor: pointer;
+}
