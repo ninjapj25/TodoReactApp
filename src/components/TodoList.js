@@ -65,7 +65,7 @@ export default function TodoList() {
         All
       </button>
 
-      <Todo filteredTodos={filteredTodos} status={status} />
+      <Todo filteredTodos={filteredTodos} setStatus={setStatus} />
 
       <form action="#" onSubmit={handleSubmit}>
         <div className="input-field col s6 add">

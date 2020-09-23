@@ -1,27 +1,24 @@
 import React, { useContext } from "react";
 import { TodosContext } from "./Providers/TodosProvider";
 
-export default function Todo({ filteredTodos, status }) {
+export default function Todo({ filteredTodos, setStatus }) {
   const [todos, setTodos] = useContext(TodosContext);
 
   const newTodos = () =>
     filteredTodos().map((filteredTodo) => {
       const deleteHandler = () => {
-        setTodos(
-          todos.filter(
-            (el) => el.id !== filteredTodo.id,
-            alert(`Deleted ${filteredTodo.title}`)
-          )
-        );
+        setTodos(todos.filter((el) => el.id !== filteredTodo.id));
       };
 
       const handleComplete = (e) => {
         filteredTodo.completed = !filteredTodo.completed;
         if (filteredTodo.completed === true) {
-          alert(filteredTodo.title + " moved to completed task");
+          setStatus("complete");
+
           e.target.parentElement.classList.add("completed");
         } else {
-          alert(filteredTodo.title + " moved to incomplete task");
+          setStatus("incomplete");
+
           e.target.parentElement.classList.remove("completed");
         }
       };
